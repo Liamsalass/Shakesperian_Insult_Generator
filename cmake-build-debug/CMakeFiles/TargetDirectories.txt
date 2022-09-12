@@ -1,0 +1,3 @@
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/cmake-build-debug/CMakeFiles/Shakesperian_Insult_Generator.dir
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/cmake-build-debug/CMakeFiles/rebuild_cache.dir
