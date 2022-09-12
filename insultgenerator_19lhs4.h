@@ -1,25 +1,25 @@
 class FileException : public std::exception {
 public:
-	char* what() {
-		return "File Error";
-	}
+	char* what();
 };
 
 
 class NumInsultsOutOfBounds : public std::exception {
 public:
-	char* what() {
-		return "The number of insults is out of bounds";
-	}
+	char* what();
 };
 
-class InsultGenerator() {
-
-	void initialize();
+class InsultGenerator {
 
 
+public:
+    void initialize();
+    std::string talkToMe();
 
-}
+    std::vector<std::string> generate(int i);
+
+    void generateAndSave(const char *string, int i);
+};
 
 
 
