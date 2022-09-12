@@ -6,7 +6,17 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/liams/CLionProjects/Shakesperian Insult Generator/main.cpp
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/TestInsultGenerator.cpp
 iostream
 -
+string
+-
+vector
+-
+time.h
+-
+insultgenerator_19lhs4.h
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.h
+
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.h
 

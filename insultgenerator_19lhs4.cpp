@@ -7,31 +7,31 @@
 using namespace std;
 
 
+class InsultGenerator()
 
-
-
-class InsultGenerator() {
+{
 public:
-	char prefix[49][50];
-	char root[49][50];
-	char suffix[49][50];
+string prefix[49];
+string root[49];
+string suffix[49];
 
-	void initialize() {
-		int row = 0;
-		ifstream insults("InsultsSource.txt")
-		string line;
 
-		while (getline(insults, line)) {
-			istringstream iss(line);
-			
-			getline(iss, prefix[row][0], '\t');
-			getline(iss, root[row][0], '\t');
-			getline(iss, sufffix[row][0]);
+void initialize() {
+    int row = 0;
+    ifstream insults("InsultsSource.txt");
+    string line;
 
-			row++;
-		}
+    while (getline(insults, line)) {
+        istringstream iss(line);
 
-	}
+        getline(iss, prefix[row], '\t');
+        getline(iss, root[row], '\t');
+        getline(iss, sufffix[row]);
+        cout << prefix[row] << " " << root[row] << " " << suffix[row] << endl;
+        row++;
+    }
+
+}
 
 }
 
