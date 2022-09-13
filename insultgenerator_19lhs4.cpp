@@ -1,9 +1,20 @@
+/*
+ *
+ *      Liam Salass
+ *      20229595
+ *
+ */
+
+
+
+
 #include <iostream>
 #include <fstream>
 #include <sstream>
 #include <string>
+#include <vector>
 #include "math.h"
-#include "insultgenerator_19lhs4.h"
+
 
 
 using namespace std;
@@ -24,42 +35,42 @@ public:
 };
 
 
-class InsultGenerator(){
+class InsultGenerator{
     public:
         string prefix[49];
         string root[49];
         string suffix[49];
-        void initialize();
-        string talkToMe();
+        void initialize(){
+            int row = 0;
+            ifstream insults("InsultsSource.txt");
+            string line;
+
+            while (getline(insults, line)) {
+                istringstream iss(line);
+
+                getline(iss, prefix[row], '\t');
+                getline(iss, root[row], '\t');
+                getline(iss, suffix[row]);
+                cout << prefix[row] << " " << root[row] << " " << suffix[row] << endl;
+                row++;
+            }
+        };
+        string talkToMe(){
+            int iPrefix = rand() % 49;
+            int iRoot = rand() % 49;
+            int iSuffix = rand() % 49;
+            return "Thou " + prefix[iPrefix] + " " + root[iRoot] + " " + suffix[iSuffix] + "!";
+        };
+        vector<string> generate(int n) {
+            if (n <= 0 || n > 10000) {
+                throw NumInsultsOutOfBounds();
+            } else {
+                for (int i = 0; i < n; i++) {
+
+                }
+            }
+        };
 };
-void InsultGenerator::initialize() {
-    int row = 0;
-    ifstream insults("InsultsSource.txt");
-    string line;
-
-    while (getline(insults, line)) {
-        istringstream iss(line);
-
-        getline(iss, prefix[row], '\t');
-        getline(iss, root[row], '\t');
-        getline(iss, sufffix[row]);
-        cout << prefix[row] << " " << root[row] << " " << suffix[row] << endl;
-        row++;
-    }
-}
 
 
-std::string InsultGenerator::talkToMe() {
-    int iPrefix = rand() % 49;
-    int iRoot = rand() % 49;
-    int iSuffix = rand() % 49;
-    return prefix[iPrefix] + " " + root[iRoot] + " " + suffix[iSuffix];
-}
 
-std::vector<string> InsultGenerator::generate(int i) {
-    return nullptr;
-}
-
-void InsultGenerator::generateAndSave(const char *string, int i) {
-
-}
