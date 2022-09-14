@@ -53,10 +53,10 @@ int main() {
 	else
 		cerr << "Insults could not be generated!" << endl;
 
-	// generateAndSave() generates the requested number of unique insults and saves them to the filename
-	// supplied.  If the file cannot be written, the method should throw an exception.  Note that the
-	// insults in the file should be in alphabetical order!
-	// Check the number to generate limits first:
+//	 generateAndSave() generates the requested number of unique insults and saves them to the filename
+//	 supplied.  If the file cannot be written, the method should throw an exception.  Note that the
+//	 insults in the file should be in alphabetical order!
+//	 Check the number to generate limits first:
 	try {
 		ig.generateAndSave("Nothing.txt", 40000);
 	} catch (NumInsultsOutOfBounds& e) {

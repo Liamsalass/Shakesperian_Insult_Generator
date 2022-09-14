@@ -21,6 +21,7 @@ class InsultGenerator {
 public:
     void initialize();
     std::string talkToMe();
+    std::vector<std::string> generate(int i);
 };
 
 
