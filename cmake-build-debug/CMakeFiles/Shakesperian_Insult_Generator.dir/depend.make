@@ -4,3 +4,6 @@
 CMakeFiles/Shakesperian_Insult_Generator.dir/TestInsultGenerator.cpp.obj: \
  ../TestInsultGenerator.cpp \
  ../insultgenerator_19lhs4.h
+CMakeFiles/Shakesperian_Insult_Generator.dir/insultgenerator_19lhs4.cpp.obj: \
+ ../insultgenerator_19lhs4.cpp \
+ ../insultgenerator_19lhs4.h

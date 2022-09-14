@@ -16,9 +16,13 @@ public:
 };
 
 class InsultGenerator {
-
+private:
+    std::vector<std::string> prefix;
+    std::vector<std::string> root;
+    std::vector<std::string> suffix;
 
 public:
+
     void initialize();
     std::string talkToMe();
     std::vector<std::string> generate(int i);

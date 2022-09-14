@@ -57,30 +57,30 @@ int main() {
 //	 supplied.  If the file cannot be written, the method should throw an exception.  Note that the
 //	 insults in the file should be in alphabetical order!
 //	 Check the number to generate limits first:
-	try {
-		ig.generateAndSave("Nothing.txt", 40000);
-	} catch (NumInsultsOutOfBounds& e) {
-		cerr << e.what() << endl;
-	}
-	cout << "\nSaving 1000 unique insults to a file...";
-	try {
-		ig.generateAndSave("SavedInsults.txt", 1000);
-	} catch (FileException& e) {
-		cerr << e.what() << endl;
-		return 1;
-	}
-	cout << "done." << endl;
-
-	// Test ability to generate the maximum number of insults and how long it takes.
-	try {
-		start = clock();
-		insults = ig.generate(10000);
-		finish = clock();
-	} catch (NumInsultsOutOfBounds& e) {
-		cerr << e.what() << endl;
-	}
-	cout << "\n" << insults.size() << " insults generated." << endl;
-	cout << (1e3 * (finish - start)/CLOCKS_PER_SEC) << " msec to complete." << endl;
+//	try {
+//		ig.generateAndSave("Nothing.txt", 40000);
+//	} catch (NumInsultsOutOfBounds& e) {
+//		cerr << e.what() << endl;
+//	}
+//	cout << "\nSaving 1000 unique insults to a file...";
+//	try {
+//		ig.generateAndSave("SavedInsults.txt", 1000);
+//	} catch (FileException& e) {
+//		cerr << e.what() << endl;
+//		return 1;
+//	}
+//	cout << "done." << endl;
+//
+//	// Test ability to generate the maximum number of insults and how long it takes.
+//	try {
+//		start = clock();
+//		insults = ig.generate(10000);
+//		finish = clock();
+//	} catch (NumInsultsOutOfBounds& e) {
+//		cerr << e.what() << endl;
+//	}
+//	cout << "\n" << insults.size() << " insults generated." << endl;
+//	cout << (1e3 * (finish - start)/CLOCKS_PER_SEC) << " msec to complete." << endl;
 
 	return 0;
 

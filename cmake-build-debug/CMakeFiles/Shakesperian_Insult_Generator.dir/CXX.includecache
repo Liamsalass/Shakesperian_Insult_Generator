@@ -6,14 +6,18 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/liams/CLionProjects/Shakesperian Insult Generator/TestInsultGenerator.cpp
+C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.cpp
 iostream
+-
+fstream
+-
+sstream
 -
 string
 -
 vector
 -
-time.h
+unordered_set
 -
 insultgenerator_19lhs4.h
 C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.h

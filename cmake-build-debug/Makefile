@@ -152,6 +152,30 @@ TestInsultGenerator.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shakesperian_Insult_Generator.dir\build.make CMakeFiles/Shakesperian_Insult_Generator.dir/TestInsultGenerator.cpp.s
 .PHONY : TestInsultGenerator.cpp.s
 
+insultgenerator_19lhs4.obj: insultgenerator_19lhs4.cpp.obj
+.PHONY : insultgenerator_19lhs4.obj
+
+# target to build an object file
+insultgenerator_19lhs4.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shakesperian_Insult_Generator.dir\build.make CMakeFiles/Shakesperian_Insult_Generator.dir/insultgenerator_19lhs4.cpp.obj
+.PHONY : insultgenerator_19lhs4.cpp.obj
+
+insultgenerator_19lhs4.i: insultgenerator_19lhs4.cpp.i
+.PHONY : insultgenerator_19lhs4.i
+
+# target to preprocess a source file
+insultgenerator_19lhs4.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shakesperian_Insult_Generator.dir\build.make CMakeFiles/Shakesperian_Insult_Generator.dir/insultgenerator_19lhs4.cpp.i
+.PHONY : insultgenerator_19lhs4.cpp.i
+
+insultgenerator_19lhs4.s: insultgenerator_19lhs4.cpp.s
+.PHONY : insultgenerator_19lhs4.s
+
+# target to generate assembly for a file
+insultgenerator_19lhs4.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Shakesperian_Insult_Generator.dir\build.make CMakeFiles/Shakesperian_Insult_Generator.dir/insultgenerator_19lhs4.cpp.s
+.PHONY : insultgenerator_19lhs4.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -164,6 +188,9 @@ help:
 	@echo ... TestInsultGenerator.obj
 	@echo ... TestInsultGenerator.i
 	@echo ... TestInsultGenerator.s
+	@echo ... insultgenerator_19lhs4.obj
+	@echo ... insultgenerator_19lhs4.i
+	@echo ... insultgenerator_19lhs4.s
 .PHONY : help
 
 

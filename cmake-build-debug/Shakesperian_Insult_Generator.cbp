@@ -83,6 +83,12 @@
 		<Unit filename="C:/Users/liams/CLionProjects/Shakesperian Insult Generator/TestInsultGenerator.cpp">
 			<Option target="Shakesperian_Insult_Generator"/>
 		</Unit>
+		<Unit filename="C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.cpp">
+			<Option target="Shakesperian_Insult_Generator"/>
+		</Unit>
+		<Unit filename="C:/Users/liams/CLionProjects/Shakesperian Insult Generator/insultgenerator_19lhs4.h">
+			<Option target="Shakesperian_Insult_Generator"/>
+		</Unit>
 		<Unit filename="C:/Users/liams/CLionProjects/Shakesperian Insult Generator/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
