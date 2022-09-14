@@ -62,10 +62,15 @@ class InsultGenerator{
             return "Thou " + prefix[iPrefix] + " " + root[iRoot] + " " + suffix[iSuffix] + "!";
         };
         vector<string> generate(int n) {
+            vector<string> insults;
             if (n <= 0 || n > 10000) {
                 throw NumInsultsOutOfBounds();
             } else {
                 for (int i = 0; i < n; i++) {
+                    string talk ;
+                    while (adjacent_find(insults.begin(), insults.end()) != talk){
+
+                    }
 
                 }
             }
