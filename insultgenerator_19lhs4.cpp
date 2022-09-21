@@ -81,6 +81,11 @@ vector<string> InsultGenerator::generate(int n) {
     return insults;
 };
 
+void InsultGenerator::generateAndSave(int n) {
+
+
+};
+
 
 
 

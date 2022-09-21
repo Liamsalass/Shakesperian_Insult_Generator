@@ -22,10 +22,10 @@ private:
     std::vector<std::string> suffix;
 
 public:
-
     void initialize();
     std::string talkToMe();
-    std::vector<std::string> generate(int i);
+    std::vector<std::string> generate(int n);
+    void generateAndSave(int n);
 };
 
 
