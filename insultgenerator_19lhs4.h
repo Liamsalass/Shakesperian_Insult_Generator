@@ -25,7 +25,7 @@ public:
     void initialize();
     std::string talkToMe();
     std::vector<std::string> generate(int n);
-    void generateAndSave(int n);
+    void generateAndSave(const std::string &file_name, int n);
 };
 
 

@@ -35,6 +35,7 @@ char* NumInsultsOutOfBounds::what() {
 void InsultGenerator::initialize(){
     ifstream insults("InsultsSource.txt");
     string line;
+    //if ((insults.fail())) throw FileException();
 
     while (getline(insults, line)) {
         istringstream iss(line);
@@ -64,7 +65,7 @@ vector<string> InsultGenerator::generate(int n) {
     vector<string> insults;
     unordered_set<string> insult_set;
     insult_set.reserve(n);
-    if (n <= 0 || n > 10000) {
+    if (n < 1 || n > 10000) {
         throw NumInsultsOutOfBounds();
     } else {
         for (int i = 0; i < n; i++) {
@@ -78,12 +79,18 @@ vector<string> InsultGenerator::generate(int n) {
             insults.push_back(insult);
         }
     }
+    insult_set.clear();
     return insults;
 };
 
-void InsultGenerator::generateAndSave(int n) {
 
-
+void InsultGenerator::generateAndSave(const string &file_name, int n) {
+    if (n < 1 || n > 10000) throw NumInsultsOutOfBounds();
+    vector<string> insults = generate(n);
+    ofstream outfile(file_name);
+    for (int i = 0; i <= n; i++){
+        outfile << insults[i] << endl;
+    }
 };
 
 
