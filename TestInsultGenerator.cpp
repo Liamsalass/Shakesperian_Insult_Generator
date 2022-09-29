@@ -17,8 +17,7 @@ int main() {
 
 	InsultGenerator ig;
 	vector<string> insults;
-	clock_t start=0;
-    clock_t finish=0;
+	clock_t start=0, finish=0;
 
 	// The initialize() method should load all the source phrases from the InsultsSource.txt file into the attributes.
 	// If the file cannot be read, the method should throw an exception.
